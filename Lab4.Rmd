@@ -10,7 +10,6 @@ output: html_notebook
 
 ```{r}
 library(keras)
-#install_keras()
 ```
 
 ```{r}
