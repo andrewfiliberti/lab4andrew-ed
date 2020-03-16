@@ -107,3 +107,19 @@ cat('Test accuracy: ', score$acc, "\n")
 ```
 
 
+```
+a) Description of Model Architecture
+
+  The model that we decided to implement was a convolutional neural network. We used a 1D convolution function because our data is 1-dimensional. We set the number of filters to 16, and used a kernel-size of 3. This window is a length of 3 centered on each sample. The function applied was a rectified linear unit activation function. This function turns values to 0 if the sample is < 0, but if > 0 uses it as input (ramp). The dropuout rate was set at 0.25, which means it will downsample it by a factor of 1/4. Since the filers turn our data into 2-dimensions, layer flatten will remove the filter dimension and serilaize the filter outputs into 1-dimension. Layer dense takes the outputs of the previous layer within the kernel size and acts like a perceptron, except with a smaller amount of input data (which makes sense knowing convolution is the idea of the model). We used 10 nodes for this layer. We then down-sampled the data again by 1/2, and applied another dense layer with a softmax function (which is a standard output layer function). 
+  
+  
+b) Evaluation/Results
+
+
+
+c) Learning the past 2 weeks
+  
+  A lot of the learning in the last two weeks had to deal with Convolutional Neural Networks (CNNs). Being that traditional ANNs were created to emulate the human brain, CNNs worked in the same way in that they would take whatever input is fed in, compute using activation functions in the hidden layers do come up with a net input value, and then pass it to the output. The difference is that CNNs use convolution, pooling, and fully-connected layers. This is due to the fact that the neuron structure of CNNs is composed of three dimensions, 
+  
+```
+
