@@ -64,13 +64,13 @@ input_shape <- c(561,1)
 num_classes <-5
 head(y_train)
 model <- keras_model_sequential() %>%
-  layer_conv_1d(filters = 16,
+  layer_conv_1d(filters = 128,
                 kernel_size = c(3),
                 activation = 'relu',
                 input_shape = input_shape) %>% 
   layer_dropout(rate = 0.25) %>% 
   layer_flatten() %>% 
-  layer_dense(units = 10,
+  layer_dense(units = 64,
               activation = 'relu') %>% 
   layer_dropout(rate = 0.5) %>% 
   layer_dense(units = num_classes,
@@ -88,8 +88,8 @@ model %>% compile(
 
 
 ```{r}
-batch_size <- 128
-epochs <- 12
+batch_size <- 64
+epochs <- 15
 
 # Train model
 model %>% fit(
