@@ -105,4 +105,19 @@ cat('Test loss: ', score$loss, "\n")
 cat('Test accuracy: ', score$acc, "\n")
 ```
 
+```
+a) Description of model architecture
+  We used the keras package to implement our model. The dataset was split into training and testing sets, and then was situated into the right format for our CNN model. The function that we used created a 1-dimensional CNN, for the data that we were using was 1-dimensional. 
+
+
+b) Results Evaluation
+
+
+
+
+c) Learning in the past 2 weeks
+
+
+
+```
 
