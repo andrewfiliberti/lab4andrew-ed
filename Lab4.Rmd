@@ -112,7 +112,7 @@ cat('Test accuracy: ', score$acc, "\n")
    
    
  b) Evaluation/Results
-  After running the model many times, each time changing different variables, we kept obtaining a loss value of "NaN" and an accuracy of exactly 1. The loss value would slowly get higher and higher until it reached infinity. Obviously from these metrics we knew something was wrong. Looking at the variables that we could change, we immediately began to change the number of epochs. We thought that we didn't have enough to reach an optimal predictive power. This didn't work, so we began to fluctuate the batch size but weren't able to come up with change. 
+  After running the model many times, each time changing different variables, we kept obtaining a loss value of "NaN" and an accuracy of exactly 1. The loss value would slowly get higher and higher until it reached infinity. Obviously from these metrics we knew something was wrong. Looking at the variables that we could change, we immediately began to change the number of epochs. We thought that we didn't have enough to reach an optimal predictive power. This didn't work, so we began to fluctuate the batch size but weren't able to come up with change. We aren't sure what happened, but a loss value of infinity and an accuracy of 1 makes no sense. 
 
 
  c) Learning the past 2 weeks
